@@ -1,0 +1,72 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+  <head>
+    <title>Truncate To Period</title>
+    <link rel="stylesheet" type="text/css" href="../../css/bpdoc.css" />
+  </head>
+  <body>
+    <div id="content_container">
+      <a class="navbar_style" href="../../index.html">IngameDateTime</a>
+      <a class="navbar_style">&gt;</a>
+      <a class="navbar_style" href="../IngameCalendar.html">Ingame Calendar</a>
+      <a class="navbar_style">&gt;</a>
+      <a class="navbar_style">Truncate To Period</a>
+      <h1 class="title_style">Truncate To Period</h1>
+      <p>Truncates a date/time value to the specified period (all smaller periods are set to zero).<br /><br />Example:<br />With a standard calendar, a date/time of 18:30:59, Jan 1st 2016 truncated to period Hour would yield 18:00:00, Jan 1st 2016.</p>
+      <img src="../img/nd_img_BP_TruncateToPeriod.png" />
+      <h3 class="title_style">Inputs</h3>
+      <table>
+        <colgroup>
+          <col width="25%" />
+          <col width="75%" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <div class="param_name title_style">Target</div>
+              <div class="param_type">Ingame Calendar Reference</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Time</div>
+              <div class="param_type">Ingame Date Time Value Structure (by ref)</div>
+            </td>
+            <td>
+              <p>Input date/time value</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Period Id</div>
+              <div class="param_type">Name</div>
+            </td>
+            <td>
+              <p>ID of period to truncate to</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 class="title_style">Outputs</h3>
+      <table>
+        <colgroup>
+          <col width="25%" />
+          <col width="75%" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <div class="param_name title_style">Return Value</div>
+              <div class="param_type">Ingame Date Time Value Structure</div>
+            </td>
+            <td>
+              <p>Time truncated to the specified period</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

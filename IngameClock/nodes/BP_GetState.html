@@ -1,0 +1,63 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+  <head>
+    <title>Get Clock State</title>
+    <link rel="stylesheet" type="text/css" href="../../css/bpdoc.css" />
+  </head>
+  <body>
+    <div id="content_container">
+      <a class="navbar_style" href="../../index.html">IngameDateTime</a>
+      <a class="navbar_style">&gt;</a>
+      <a class="navbar_style" href="../IngameClock.html">Ingame Clock</a>
+      <a class="navbar_style">&gt;</a>
+      <a class="navbar_style">Get Clock State</a>
+      <h1 class="title_style">Get Clock State</h1>
+      <p>Returns a representation of the internal clock state, which can be stored/saved and later used to restore a clock to the same time.<br /><br />WARNING: Specifying bIncludeTimers is experimental and unsupported. It most definitely is not safe to use with a SaveGame.</p>
+      <img src="../img/nd_img_BP_GetState.png" />
+      <h3 class="title_style">Inputs</h3>
+      <table>
+        <colgroup>
+          <col width="25%" />
+          <col width="75%" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <div class="param_name title_style">Target</div>
+              <div class="param_type">Ingame Clock Reference</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Include Timers</div>
+              <div class="param_type">Boolean</div>
+            </td>
+            <td>
+              <p>EXPERIMENTAL</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 class="title_style">Outputs</h3>
+      <table>
+        <colgroup>
+          <col width="25%" />
+          <col width="75%" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <div class="param_name title_style">Return Value</div>
+              <div class="param_type">Ingame Clock State Structure</div>
+            </td>
+            <td>
+              <p>The current clock state</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

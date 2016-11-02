@@ -1,0 +1,108 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+  <head>
+    <title>Register Timer In (Delegate)</title>
+    <link rel="stylesheet" type="text/css" href="../../css/bpdoc.css" />
+  </head>
+  <body>
+    <div id="content_container">
+      <a class="navbar_style" href="../../index.html">IngameDateTime</a>
+      <a class="navbar_style">&gt;</a>
+      <a class="navbar_style" href="../IngameClock.html">Ingame Clock</a>
+      <a class="navbar_style">&gt;</a>
+      <a class="navbar_style">Register Timer In (Delegate)</a>
+      <h1 class="title_style">Register Timer In (Delegate)</h1>
+      <p>Registers a timer event to be triggered after a given delay, specified as a duration value.<br />Can optionally repeat indefinitely/until cleared.<br /><br />Cannot be called on a network client.</p>
+      <img src="../img/nd_img_BP_RegisterDurationTimerDelegate.png" />
+      <h3 class="title_style">Inputs</h3>
+      <table>
+        <colgroup>
+          <col width="25%" />
+          <col width="75%" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <div class="param_name title_style">In</div>
+              <div class="param_type">Exec</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Target</div>
+              <div class="param_type">Ingame Clock Reference</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Duration</div>
+              <div class="param_type">Ingame Duration Structure (by ref)</div>
+            </td>
+            <td>
+              <p>The duration after which the timer will fire</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Repeating</div>
+              <div class="param_type">Boolean</div>
+            </td>
+            <td>
+              <p>If true, the timer will fire repeatedly until cleared</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Data</div>
+              <div class="param_type">Ingame Timer Data Structure</div>
+            </td>
+            <td>
+              <p>Arbitrary data to attach to the timer, which will be passed through to the timer event</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Delegate</div>
+              <div class="param_type">Delegate</div>
+            </td>
+            <td>
+              <p>The event triggered when the timer fires</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 class="title_style">Outputs</h3>
+      <table>
+        <colgroup>
+          <col width="25%" />
+          <col width="75%" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <div class="param_name title_style">Out</div>
+              <div class="param_type">Exec</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Return Value</div>
+              <div class="param_type">Ingame Timer Handle Structure</div>
+            </td>
+            <td>
+              <p>A handle to the registered timer</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

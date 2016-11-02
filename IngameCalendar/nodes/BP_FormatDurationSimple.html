@@ -1,0 +1,108 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+  <head>
+    <title>Format Duration Simple</title>
+    <link rel="stylesheet" type="text/css" href="../../css/bpdoc.css" />
+  </head>
+  <body>
+    <div id="content_container">
+      <a class="navbar_style" href="../../index.html">IngameDateTime</a>
+      <a class="navbar_style">&gt;</a>
+      <a class="navbar_style" href="../IngameCalendar.html">Ingame Calendar</a>
+      <a class="navbar_style">&gt;</a>
+      <a class="navbar_style">Format Duration Simple</a>
+      <h1 class="title_style">Format Duration Simple</h1>
+      <p>Formats a duration, using the specified period as the starting point. This period must be fixed length.<br /><br />Example:<br />With an input duration of 1 day, 12 hours, 30 minutes, MajorPeriodId of Hour, the output would be "36:30:00".</p>
+      <img src="../img/nd_img_BP_FormatDurationSimple.png" />
+      <h3 class="title_style">Inputs</h3>
+      <table>
+        <colgroup>
+          <col width="25%" />
+          <col width="75%" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <div class="param_name title_style">Target</div>
+              <div class="param_type">Ingame Calendar Reference</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Duration</div>
+              <div class="param_type">Ingame Duration Structure (by ref)</div>
+            </td>
+            <td>
+              <p>Input duration value to format</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Major Period Id</div>
+              <div class="param_type">Name</div>
+            </td>
+            <td>
+              <p>The largest period to use</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Period Separator</div>
+              <div class="param_type">String</div>
+            </td>
+            <td>
+              <p>Separator symbol to place between period values</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Hide Leading Zero Periods</div>
+              <div class="param_type">Boolean</div>
+            </td>
+            <td>
+              <p>Whether to omit leading zero periods from the output</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Fractional Digits</div>
+              <div class="param_type">Byte</div>
+            </td>
+            <td>
+              <p>Number of fractional digits to include in output</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Fractional Separator</div>
+              <div class="param_type">String</div>
+            </td>
+            <td>
+              <p>Separator to use between smallest period and fractional part</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 class="title_style">Outputs</h3>
+      <table>
+        <colgroup>
+          <col width="25%" />
+          <col width="75%" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <div class="param_name title_style">Return Value</div>
+              <div class="param_type">Text</div>
+            </td>
+            <td>
+              <p>Duration formatted as text</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
