@@ -1,0 +1,72 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+  <head>
+    <title>Advance Time To</title>
+    <link rel="stylesheet" type="text/css" href="../../css/bpdoc.css" />
+  </head>
+  <body>
+    <div id="content_container">
+      <a class="navbar_style" href="../../index.html">IngameDateTime_Dev</a>
+      <a class="navbar_style">&gt;</a>
+      <a class="navbar_style" href="../IngameClock.html">Ingame Clock</a>
+      <a class="navbar_style">&gt;</a>
+      <a class="navbar_style">Advance Time To</a>
+      <h1 class="title_style">Advance Time To</h1>
+      <p>Advances the clock to the specified time, which must be in the future.<br />All registered timers in the intervening period will be triggered.<br />Must not be called from within a timer event handler of this clock.</p>
+      <img src="../img/nd_img_BP_AdvanceTimeTo.png" />
+      <h3 class="title_style">Inputs</h3>
+      <table>
+        <colgroup>
+          <col width="25%" />
+          <col width="75%" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <div class="param_name title_style">In</div>
+              <div class="param_type">Exec</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Target</div>
+              <div class="param_type">Ingame Clock Object Reference</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">New Time</div>
+              <div class="param_type">Ingame Date Time Value Structure (by ref)</div>
+            </td>
+            <td>
+              <p>Date/time value to which the clock should be advanced. Must be in the future relative to clock's current time.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 class="title_style">Outputs</h3>
+      <table>
+        <colgroup>
+          <col width="25%" />
+          <col width="75%" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <div class="param_name title_style">Out</div>
+              <div class="param_type">Exec</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

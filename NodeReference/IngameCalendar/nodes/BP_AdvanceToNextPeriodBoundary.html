@@ -1,0 +1,72 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+  <head>
+    <title>Advance To Next Boundary</title>
+    <link rel="stylesheet" type="text/css" href="../../css/bpdoc.css" />
+  </head>
+  <body>
+    <div id="content_container">
+      <a class="navbar_style" href="../../index.html">IngameDateTime_Dev</a>
+      <a class="navbar_style">&gt;</a>
+      <a class="navbar_style" href="../IngameCalendar.html">Ingame Calendar</a>
+      <a class="navbar_style">&gt;</a>
+      <a class="navbar_style">Advance To Next Boundary</a>
+      <h1 class="title_style">Advance To Next Boundary</h1>
+      <p>Takes a date/time value and moves it forward to the next period boundary.<br /><br />NOTE: If Time is already exactly on a boundary, it will be advanced one whole period.<br /><br />Example:<br />With a standard calendar, a date/time of 18:30:59, Jan 1st 2016 advanced to period Hour would yield 19:00:00, Jan 1st 2016.</p>
+      <img src="../img/nd_img_BP_AdvanceToNextPeriodBoundary.png" />
+      <h3 class="title_style">Inputs</h3>
+      <table>
+        <colgroup>
+          <col width="25%" />
+          <col width="75%" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <div class="param_name title_style">Target</div>
+              <div class="param_type">Ingame Calendar Object Reference</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Time</div>
+              <div class="param_type">Ingame Date Time Value Structure (by ref)</div>
+            </td>
+            <td>
+              <p>Input date/time value</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Period Id</div>
+              <div class="param_type">Name</div>
+            </td>
+            <td>
+              <p>ID of period boundary to advance to</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 class="title_style">Outputs</h3>
+      <table>
+        <colgroup>
+          <col width="25%" />
+          <col width="75%" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <div class="param_name title_style">Return Value</div>
+              <div class="param_type">Ingame Date Time Value Structure</div>
+            </td>
+            <td>
+              <p>Time advanced to next boundary of PeriodId</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

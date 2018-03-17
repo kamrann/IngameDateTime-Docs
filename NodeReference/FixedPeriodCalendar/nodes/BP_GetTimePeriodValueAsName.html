@@ -1,0 +1,81 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+  <head>
+    <title>Get Named Time Period Value</title>
+    <link rel="stylesheet" type="text/css" href="../../css/bpdoc.css" />
+  </head>
+  <body>
+    <div id="content_container">
+      <a class="navbar_style" href="../../index.html">IngameDateTime_Dev</a>
+      <a class="navbar_style">&gt;</a>
+      <a class="navbar_style" href="../FixedPeriodCalendar.html">Fixed Period Calendar</a>
+      <a class="navbar_style">&gt;</a>
+      <a class="navbar_style">Get Named Time Period Value</a>
+      <h1 class="title_style">Get Named Time Period Value</h1>
+      <p>Returns the value of the specified named time period.</p>
+      <img src="../img/nd_img_BP_GetTimePeriodValueAsName.png" />
+      <h3 class="title_style">Inputs</h3>
+      <table>
+        <colgroup>
+          <col width="25%" />
+          <col width="75%" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <div class="param_name title_style">Target</div>
+              <div class="param_type">Fixed Period Calendar Object Reference</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Time</div>
+              <div class="param_type">Ingame Date Time Value Structure (by ref)</div>
+            </td>
+            <td>
+              <p>Input date/time value</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Period Id</div>
+              <div class="param_type">Name</div>
+            </td>
+            <td>
+              <p>ID of period</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 class="title_style">Outputs</h3>
+      <table>
+        <colgroup>
+          <col width="25%" />
+          <col width="75%" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <div class="param_name title_style">Success</div>
+              <div class="param_type">Boolean</div>
+            </td>
+            <td>
+              <p>False if the period was not found, or was not a named period. Otherwise true.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Value</div>
+              <div class="param_type">Name</div>
+            </td>
+            <td>
+              <p>Returned time period value.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
